@@ -12,7 +12,7 @@
 </head>
 <body>
 <!--HEader -->
-</div><nav class="main-menu">
+<nav class="main-menu" style="position: fixed;">
 
 
   
@@ -151,7 +151,7 @@ margin-left: 56px;top:3px;">
 
   
 <li class="darkerlishadowdown">
-<a href="http://startific.com">
+<a href="#space">
 <i class="fa fa-rocket fa-lg"></i>
 <span class="nav-text">Space</span>
 </a>
@@ -255,7 +255,7 @@ margin-left: 56px;top:3px;">
 
           <img src="https://images.unsplash.com/photo-1602836948295-14b195efa63d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="">
         </div>
-        <div class="content-cont">
+        <div class="content-cont" style=" font-family: monospace;">
           <h3>Word In English</h3>
           <p>English Meaning</p>
           <p>Hover for Sanskrit Word</p>
@@ -283,35 +283,116 @@ margin-left: 56px;top:3px;">
     <div class="box vertical box1">
       <div class="genre">Food</div>
       <h3 class="title">Wake Up and Smell the Coffee</h3>
-      <a href="#" class="read-btn">Read for $0.99</a>
+      <a href="#" class="read-btn">Read </a>
     </div>
     <div class="box horizontal box2">
       <div class="genre">Architecture</div>
       <h3 class="title">The Brand New Nasa Office</h3>
-      <a href="#" class="read-btn">Read for $0.99</a>
+      <a href="#" class="read-btn">Read </a>
     </div>
     <div class="box horizontal box3">
       <div class="genre">Travel</div>
       <h3 class="title">Edperience the Saharan Sands</h3>
-      <a href="#" class="read-btn">Read for $0.99</a>
+      <a href="#" class="read-btn">Read </a>
     </div>
     <div class="box horizontal box4">
       <div class="genre">Interior</div>
       <h3 class="title">9 Air-Cleaning Plants Your Home Needs</h3>
-      <a href="#" class="read-btn">Read for $0.99</a>
+      <a href="#" class="read-btn">Read </a>
     </div>
     <div class="box horizontal box5">
       <div class="genre">Food</div>
       <h3 class="title">One Month Sugar Detox</h3>
-      <a href="#" class="read-btn">Read for $0.99</a>
+      <a href="#" class="read-btn">Read </a>
     </div>
     <div class="box vertical box6">
       <div class="genre">Photography</div>
       <h3 class="title">Shooting Minimal Instagram Photos</h3>
-      <a href="#" class="read-btn">Read for $0.99</a>
+      <a href="#" class="read-btn">Read </a>
     </div>
   </div>
 
 </section>
+<!--Space -->
+<script type="text/javascript">
+  const btns = document.querySelectorAll(".acc-btn");
+const title = document.querySelector(".title");
+const card = document.querySelector(".card");
+
+// fn
+function accordion() {
+  // this = the btn | icon & bg changed
+  this.classList.toggle("is-open");
+
+  // the acc-content
+  const content = this.nextElementSibling;
+
+  if (content.style.maxHeight) content.style.maxHeight = null;
+  else content.style.maxHeight = content.scrollHeight + "px";
+}
+
+// event
+btns.forEach((el) => el.addEventListener("click", accordion));
+
+/* Parallax effect
+card.addEventListener("mousemove", (e) => {
+  let xAxis = ((window.innerWidth/2 - e.pageX)/15);
+  let yAxis = ((window.innerHeight/2 - e.pageY)/10);
+  title.style.transform = ` translateZ(30px) rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+
+card.addEventListener("mouseenter", (e) => {
+  title.style.transition = "none";
+});
+
+card.addEventListener("mouseleave", (e) => {
+  title.style.transition = "all 0.5s ease";
+  title.style.transform = ` translateZ(0px)`;
+});
+
+*/
+
+</script>
+
+<section id="space" style="background-image: url(https://proxy.mc-market.org/fd444de0698846a130e12a77187f60adecbc4548?url=https%3A%2F%2Fi.imgur.com%2F1cvFpYK.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;" >
+<main class="card" style="margin-left: auto;margin-right: auto;">
+  <div class="hero">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/2909/2909653.svg" class="img" />
+  </div>
+
+  <h2 class="title">Sanskrit in Space</h2>
+
+  <div class="acc-container">
+
+    <button class="acc-btn">Space is completely silent.There is no atmosphere in space, which means that sound has no medium or way to travel to be heard.There is no atmosphere in space, which means that sound has no medium or way to travel to be heard.There is no atmosphere in space, which means that sound has no medium or way to travel to be heard.</button>
+ 
+
+    <button class="acc-btn">
+      There is floating water in space
+    </button>
+  
+
+    <button class="acc-btn">
+      Neutron stars can spin 600 times per second
+    </button>
+   
+
+    <button class="acc-btn">
+      There may be a planet made out of diamonds
+    </button>
+   
+
+    <button class="acc-btn">
+      There is a volcano on mars 3x bigger than Everest
+    </button>
+   
+     </div>
+</main>
+ 
+</section>
+</main>
 </body>
 </html>
