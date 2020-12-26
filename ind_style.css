@@ -1,3 +1,507 @@
+:root {
+    
+    /* colors */
+    --purple: #7276e1;
+    --orange: hsl(14, 88%, 65%);
+    --blue-dark: hsl(238, 29%, 16%);
+    --grey-light: hsl(237, 12%, 33%);
+    --blue-mid: hsl(240, 6%, 50%);
+
+    /* fonts */
+    --font: 'Kumbh Sans', sans-serif;
+    --base-font-size: 1.2rem;
+
+}
+
+.attribution { 
+    color: #fff;
+    font-size: 11px; 
+    margin-top: 25px;
+    text-align: center;  
+}
+
+.attribution a { color:#fff; }
+
+{ box-sizing: border-box; }
+
+html {
+    font-size: 10px;
+}
+
+#help{ 
+    align-items: center;
+    background-image: linear-gradient(-180deg,  hsl(273, 75%, 66%),hsl(240, 73%, 65%)); 
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    font-weight: 400;
+    height: 100vh;
+    justify-content: center;
+    padding: 0;
+}*/
+
+.faq { 
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 50px 25px;
+    margin: 150px 5% 5% 5%;
+    min-width: 320px;
+    max-width: 320px;
+}
+
+.faq__logo {
+    background: url('https://bobmatyas.github.io/fm-faq-accordion/images/bg-pattern-mobile.svg') center bottom no-repeat;
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 0;
+    margin-top: -157px;
+}
+
+.faq__logo__image {
+    margin-left: -13px;
+    margin-bottom: 13px;
+}
+
+.faq__heading { 
+    color: var(--blue-dark);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center; 
+}
+
+.faq__detail {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin: 20px 0 0 0;
+    padding: 5px 0 20px 0;
+}
+
+.faq__summary:hover,
+.faq__summary:active { 
+    color: var(--orange);
+    cursor: pointer; 
+}
+
+.faq__detail[open] > .faq__summary { 
+    font-weight: 700; 
+}
+
+.faq__summary {
+    list-style: none;
+  }
+
+.faq__summary::-webkit-details-marker {
+    display: none;
+  }
+
+.faq__summary { 
+    display: block;
+    padding: 0;
+    position: relative;
+    text-align: right;
+}
+
+    
+.faq__summary:after {
+    display: inline-block;
+    content: url("https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-align: right;
+    padding-bottom: 20px;
+  }
+  
+details[open] .faq__summary:after {
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    content: "";
+    background-image: url("https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    transform:scaleY(-1);
+}
+  
+
+.faq__question {
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 90%;
+}
+
+.faq__question {
+    display: inline-block;
+    margin: 5px 0;
+    text-align: left;
+    width: 90%;
+}
+
+.faq__summary {
+    color: var(--blue-dark);
+    font-size: 1.4rem; 
+}
+
+.faq__summary:focus {
+    color: var(--orange); 
+    font-weight: bold;
+    outline: none;
+}
+
+.faq__text {
+    color: var(--blue-mid);
+    font-size: var(--base-font-size);
+    line-height: 1.6;
+    margin: 10px 0 0 0;
+}
+
+.hidden-lg { display: block; }
+    
+.visible-lg { display: none; }
+
+
+@media (min-width: 900px) {
+    .faq {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        min-width: 900px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .faq__logo__holder { 
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .faq__holder {
+        margin: 0 50px;
+        padding: 70px 0;
+        max-width: 350px;
+        width: 350px;
+    }
+
+    .faq__logo {
+        display: flex;
+        align-items: center;
+        background-image: url(https://bobmatyas.github.io/fm-faq-accordion/images/illustration-woman-online-desktop.svg), url(https://bobmatyas.github.io/fm-faq-accordion/images/bg-pattern-desktop.svg);
+        background-position: -75px center, -571px -270px;
+        background-size: 100%, 200%;
+        height: 100%;
+        min-width: 300px;
+        margin: 0;
+        padding: 0;
+        width: 525px;
+        max-width: 500px;
+        position: relative;
+    }
+
+    .faq__heading {
+        text-align: left;
+    }
+
+    .hidden-lg { display: none; }
+
+    .visible-lg { 
+        display: block; 
+        position: absolute;
+        margin-top: 120px;
+        left: -80px;    
+    }
+
+    .faq__text {
+        margin: 0 0 10px 0;
+    }
+
+    .faq__detail {
+        margin: 10px 0 0 0 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.gallery {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .box {
+  position: relative;
+  width: calc(100% / 3);
+  height: 250px;
+  perspective: 1000px;
+  display: inline-flex;
+  overflow: hidden;
+}
+.gallery .box .box-img {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 700ms cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+.gallery .box .box-img .face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.gallery .box .box-img .front {
+  background: aliceblue;
+  transform: translateZ(100px);
+  opacity: 1;
+}
+.gallery .box .box-img .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .box .box-img .move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: #1c2845;
+  transform: translateY(-100px) translateZ(0) rotateX(90deg);
+}
+.gallery .box .box-img .move h2, .gallery .box .box-img .move p {
+  margin: 5px;
+  color: #fff;
+}
+.gallery .box .box-img .move h2 {
+  font-weight: bold;
+}
+.gallery .box .box-img .move p {
+  font-size: 13px;
+}
+.gallery .box:hover .box-img {
+  transform: rotateX(-90deg);
+}
+.gallery .box:nth-of-type(1) .move {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.gallery .box:nth-of-type(1):hover .box-img {
+  transform: rotateY(90deg);
+}
+.gallery .box:nth-of-type(3n+4) .move {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.gallery .box:nth-of-type(3n+4):hover .box-img {
+  transform: rotateY(90deg);
+}
+.gallery .box:nth-of-type(3n+3) .move {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.gallery .box:nth-of-type(3n+3):hover .box-img {
+  transform: rotateY(-90deg);
+}
+
+.turntable{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 310px;
+  height:280px;
+  background: #9CD8BD;
+  border-radius: 5%;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.7);
+}
+
+.record {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+  width: 200px;
+  height: 200px;
+  background: black;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: none;
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.record::before {
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: repeating-radial-gradient(black, black 5px, #1C1C1C 6px, #1C1C1C 7px);
+  border-radius: 50%;
+}
+
+.overlay {
+  content: '';
+  left: 35px;
+  top: 35px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, transparent, 40%, rgba(255,255,255,0.35), 60%, transparent);
+  border-radius: 50%;
+}
+
+
+.inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(white, white 50%, #F796A8 50%, #F796A8);
+  border-radius: 50%;
+}
+
+.inner::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+
+.inner::after {
+  content: '100 Days';
+  width: 55px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 8px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+
+.arm-holder {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 50%;
+  right: 20px;
+  top: 40px;
+}
+
+.arm-holder::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: #939393;
+  border-radius: 50%;
+}
+
+.arm {
+  position: absolute;
+  right: 13px;
+  width: 60px;
+  top: 10px;
+  height: 110px;
+  border: 10px solid #939393;
+  transform: skew(-20deg, -20deg);
+  transform-origin: top right;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-radius: 0 0 30% 0;
+  animation: armTwitch 0.5s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes armTwitch {
+  0% {
+     transform: skew(-20deg, -20deg);
+  }
+  
+  100% {
+    transform: skew(-20deg, -20deg) rotate(1deg);
+  }
+}
+
+.arm::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: gray;
+  transform: skew(20deg, 20deg) rotate(75deg);
+  top: 98px;
+  left: -10px;
+  border-radius: 20%;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.dial {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  background: #333642;
+  border-radius: 50%;
+}
+
+.dial::before {
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2px;
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+}
+
+
+
  * {
     margin: 0;
     padding: 0;
@@ -96,7 +600,7 @@ html {
 
 
 
-body
+#trivia
 {
   margin:0px;
   padding:0px;
@@ -411,7 +915,7 @@ height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width:100vw;
 }
 .cont .card-cont:hover .card {
   transform: rotatey(-180deg) translatey(-20px);
@@ -547,7 +1051,7 @@ p.sub-title {
 }
 
 .container {
-  width: 960px;
+  width: 80vw;
   margin: auto;
 }
 @media (max-width: 980px) {
@@ -564,7 +1068,8 @@ p.sub-title {
 }
 @media (max-width: 980px) {
   .news {
-    grid-template-rows: repeat(7, 200px);
+    margin-left: 5%
+    grid-template-rows: repeat(7, 30vw);
   }
 }
 
