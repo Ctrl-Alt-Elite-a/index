@@ -361,9 +361,104 @@ margin-left: 56px;top:3px;">
 <br><br>
 
 
+<!--Movie Section-->
+<script type="text/javascript">
+  var imageSwap = function () {
+  var $this = $(this);
+  var newSource = $this.data("swap");
+  $this.data("swap", $this.attr("src"));
+  $this.attr("src", newSource);
+};
+
+$(function () {
+  $("img.item-bg").hover(imageSwap, imageSwap);
+});
+
+</script>
+<main>
+  <div class="box">
+    <div class="item">
+      <div class="item-poster">
+        <img src="http://www.impawards.com/tv/posters/black_sails_ver3.jpg" alt="Black Sails">
+      </div>
+      <div class="item-data">
+        <div class="item-part">
+          <div class="item-season">S4</div>
+          <div class="item-episode">E10</div>
+        </div>
+        <h1>Black Sails</h1>
+        <p>Adventure, Drama</p>
+        <div class="item-rate">
+          <div class="item-vote">8.2</div>
+          <div class="item-time">TV Series (2014–2017)</div>
+        </div>
+      </div>
+      <img class="item-bg" data-swap="https://i.giphy.com/media/l2R00GMs5jUujJtx6/giphy.gif" src="https://popseries.com.br/wp-content/uploads/2017/01/black-sails-.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <div class="item-poster">
+        <img src="http://www.impawards.com/tv/posters/walking_dead_ver4.jpg" alt="">
+      </div>
+      <div class="item-data">
+        <div class="item-part">
+          <div class="item-season">S10</div>
+          <div class="item-episode">E16</div>
+        </div>
+        <h1>The Walking Dead</h1>
+        <p>Drama, Horror, Thriller</p>
+        <div class="item-rate">
+          <div class="item-vote">8.1</div>
+          <div class="item-time">TV Series (2010- )</div>
+        </div>
+      </div>
+      <img class="item-bg" data-swap="https://i.giphy.com/media/l41m359K5ExF8aRoc/giphy.gif" src="https://www.wallpaperup.com/uploads/wallpapers/2015/05/29/702762/c7481417c549c5733d851692740f24db-700.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <div class="item-poster">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTRmYzNmOTctZjMwOS00ODZlLWJiZGQtNDg5NDY5NjE3MTczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Westworld">
+      </div>
+      <div class="item-data">
+        <div class="item-part">
+          <div class="item-season">S3</div>
+          <div class="item-episode">E10</div>
+        </div>
+        <h1>Westworld</h1>
+        <p>Drama, Mystery, Sci-Fi</p>
+        <div class="item-rate">
+          <div class="item-vote">8.7</div>
+          <div class="item-time">TV Series (2016– )</div>
+        </div>
+      </div>
+      <img class="item-bg" data-swap="https://i.giphy.com/media/dsWfO0joUyniyPdzUx/giphy.gif" src="https://www.kartal24.com/dosyalar/2020/01/westworld-3.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <div class="item-poster">
+        <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="Westworld">
+      </div>
+      <div class="item-data">
+        <div class="item-part">
+          <div class="item-season">S3</div>
+          <div class="item-episode">E10</div>
+        </div>
+        <h1>The Witcher</h1>
+        <p>Action, Adventure, Fantasy</p>
+        <div class="item-rate">
+          <div class="item-vote">8.3</div>
+          <div class="item-time">TV Series (2019– )</div>
+        </div>
+      </div>
+      <img class="item-bg" data-swap="https://media1.tenor.com/images/1fbaf34e4636f3e6c024ced99c77d4b7/tenor.gif" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSE944YASxuEsbi47hdfy5WMhWMwjuv1cthbA&usqp=CAU" alt="">
+    </div>
+
+  </div>
+</main>
+
 
 <!--Magazine section-->
-<section id="magazines" style="margin-top: 0px;color: black;background-repeat: no-repeat;background-image: url("https://images.alphacoders.com/102/thumb-1920-1026345.jpg");">
+<section id="magazines" style="margin-top: 0px;color: white;background-repeat: no-repeat;background-image: url("https://images.alphacoders.com/102/thumb-1920-1026345.jpg");">
   
   <header class="container">
     <h1 class="main-title">Magazines</h1>
@@ -533,35 +628,35 @@ card.addEventListener("mouseleave", (e) => {
 
 <!--Footer-->
 
-<footer class="text-black body-font">
+<footer class="text-white body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
       </svg>
       <span class="ml-3 text-4xl">Ctrl-Alt-Elite</span>
     </a>
-    <p class="text-xl text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 team —
-      <a href="https://twitter.com/knyttneve" class="text-black ml-1" rel="noopener noreferrer" target="_blank">@ctrl-alt-elite</a>
+    <p class="text-xl text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 team —
+      <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer" target="_blank">@ctrl-alt-elite</a>
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <a class="text-black">
+      <a class="text-white">
         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
         </svg>
       </a>
-      <a class="ml-3 text-black">
+      <a class="ml-3 text-white">
         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
         </svg>
       </a>
-      <a class="ml-3 text-black">
+      <a class="ml-3 text-white">
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
           <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
         </svg>
       </a>
-      <a class="ml-3 text-black">
+      <a class="ml-3 text-white">
         <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
           <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
           <circle cx="4" cy="4" r="2" stroke="none"></circle>
