@@ -2,7 +2,9 @@
 <html>
 <head>
   <title></title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="ind_style.css">
+
   <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content=="IE=edge"/>
 <meta name="google" value="notranslate"/>
@@ -163,7 +165,7 @@ margin-left: 56px;top:3px;">
   
 <li>
                                    
-<a href="http://startific.com">
+<a href="#help">
 <i class="fa fa-question-circle fa-lg"></i>
 <span class="nav-text">Help</span>
 </a>
@@ -187,7 +189,9 @@ margin-left: 56px;top:3px;">
 
   <section style="color: black" id="trivia">
   <!--Card Hovers-->
+  <h3 style="font-family:'Helvetica';font-weight: 400;">Trivia</h3>
   <div class='cont'>
+    
   <div class="card-cont">
     <div class="card">
       <div class="front">
@@ -272,17 +276,105 @@ margin-left: 56px;top:3px;">
 <!--Card Hover end-->
 
 
+
+<!--Music and Films-->
+  <div class="turntable">
+    <div class="record">
+      <div class="inner"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="arm-holder">
+      <div class="arm"></div>
+    </div>
+    <div class="dial"></div>
+  </div>
+</body>
+<!--Music Gallery-->
+<div class="gallery">
+  <div class="box">
+    <div class="box-img">
+      <div class="face front">
+        <img src="https://picsum.photos/401" alt="image">
+      </div>
+      <div class="face move">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit,                 amet consectetur                    adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-img">
+      <div class="face front">
+        <img src="https://picsum.photos/402" alt="image">
+      </div>
+      <div class="face move">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit,                 amet consectetur                    adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-img">
+      <div class="face front">
+        <img src="https://picsum.photos/403" alt="image">
+      </div>
+      <div class="face move">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit,                 amet consectetur                    adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-img">
+      <div class="face front">
+        <img src="https://picsum.photos/404" alt="image">
+      </div>
+      <div class="face move">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit,                 amet consectetur                    adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-img">
+      <div class="face front">
+        <img src="https://picsum.photos/405" alt="image">
+      </div>
+      <div class="face move">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit,                 amet consectetur                    adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-img">
+      <div class="face front">
+        <img src="https://picsum.photos/406" alt="image">
+      </div>
+      <div class="face move">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit,                 amet consectetur                    adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+
 <!--Magazine section-->
-<section id="magazines" style="margin-top: 0px">
+<section id="magazines" style="margin-top: 0px;color: black;background-repeat: no-repeat;background-image: url("https://images.alphacoders.com/102/thumb-1920-1026345.jpg");">
   
   <header class="container">
     <h1 class="main-title">Magazines</h1>
-    <p class="sub-title">The latest and best sanskrit articles selected by various authors.</p>
+
+    <p class="sub-title" style="color: gray">The latest and best sanskrit articles selected by various authors.</p>
   </header>
   <div class="news container">
     <div class="box vertical box1">
       <div class="genre">Food</div>
       <h3 class="title">Wake Up and Smell the Coffee</h3>
+
       <a href="#" class="read-btn">Read </a>
     </div>
     <div class="box horizontal box2">
@@ -393,6 +485,91 @@ card.addEventListener("mouseleave", (e) => {
 </main>
  
 </section>
+
+
+<!--FAQ Help-->
+<section id="help" style="color: white">
+  <main class="faq">
+        
+  <div class="faq__logo__holder">
+  <div class="faq__logo">
+    <img src="https://bobmatyas.github.io/fm-faq-accordion/images/illustration-woman-online-mobile.svg" alt="woman at a computer" class="faq__logo__image hidden-lg">
+    <img src="https://bobmatyas.github.io/fm-faq-accordion/images/illustration-box-desktop.svg" alt="" class="faq__logo__image visible-lg">
+  </div>
+  </div>
+  
+  <div class="faq__holder">
+  <h1 class="faq__heading">FAQ</h1>
+ 
+  <details class="faq__detail">
+      <summary  class="faq__summary"><span class="faq__question" style="color: white">How many team members can I invite?</span></summary>
+      <p class="faq__text" style="color: white">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+  </details>
+
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question" style="color: white">What is the maximum file upload size?</span></summary>
+    <p class="faq__text" style="color: white">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+  </details>  
+
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question" style="color: white">How do I reset my password?</span></summary>
+    <p class="faq__text" style="color: white">Click “Forgot password” from the login page or “Change password” from your profile page.</p>
+    <p class="faq__text" style="color: white">A reset link will be emailed to you.</p>
+  </details>  
+  
+  <details class="faq__detail" >
+    <summary  class="faq__summary"><span class="faq__question" style="color: white">Can I cancel my subscription?</span></summary>
+    <p class="faq__text" style="color: white">Yes! Send us a message and we’ll process your request no questions asked.</p>
+  </details> 
+  
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question" style="color: white">Do you provide additional support?</span></summary>
+    <p class="faq__text" style="color: white">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+  </details>   
+
+</div>
+</main> 
+</section>
+
+<!--Footer-->
+
+<footer class="text-black body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-4xl">Ctrl-Alt-Elite</span>
+    </a>
+    <p class="text-xl text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 team —
+      <a href="https://twitter.com/knyttneve" class="text-black ml-1" rel="noopener noreferrer" target="_blank">@ctrl-alt-elite</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-black">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-black">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-black">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-black">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
 </main>
 </body>
 </html>
