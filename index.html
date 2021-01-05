@@ -15,6 +15,14 @@
 <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
+  <script type="text/javascript">
+    var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+  </script>
   <section class="laptop">
 <!--Side Navbar -->
 <nav class="main-menu" style="position: fixed;">
@@ -140,14 +148,12 @@
 <!--Tech Gallery-->
  <h1 class="heading" style="text-align: center;">Sanskrit in Technology</h1>
   <div class="container4">
-  <div class="item"><a href="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=250" data-fancybox="gallery"><img class="t" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=250" alt="Mountain reflection on lake"></a></div>
-  <div class="item"><a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img class="t"  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="sun coming through trees"></a></div>
-  <div class="item"><a href="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img class="t"  src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="fog rolling over pine trees"></a></div>
-  <div class="item"><a href="https://images.pexels.com/photos/206673/pexels-photo-206673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img class="t"  src="https://images.pexels.com/photos/206673/pexels-photo-206673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="country house in the woods"></a></div>
-  <div class="item"><a href="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img class="t"  src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="lake view between two trees with mountain in the background"></a></div>
-  <div class="item"><a href="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img class="t"  src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="forest with a focus on an old oak tree"></a></div>
+  <div class="item"><a href="img/tech1.jpg" data-fancybox="gallery"><img class="t" src="img/tech1.jpg" alt="Mountain reflection on lake"></a></div>
+  <div class="item"><a href="img/tech2.jpg" data-fancybox="gallery"><img class="t"  src="img/tech2.jpg"></a></div>
+  <div class="item"><a href="img/tech3.jpg" data-fancybox="gallery"><img class="t"  src="img/tech3.jpg" alt="fog rolling over pine trees"></a></div>
+ 
 </div>
-</div>
+
 
 <!--Tech ends-->
 
