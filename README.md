@@ -1,1 +1,1 @@
-# index
+Our website will not only provide resources but also add to the recreation of people by providing them with not just educational material but also links to various songs and movies in Sanskrit which will enhance the vocabulary.
