@@ -1590,3 +1590,9 @@ g#head #leftAntenna > ellipse, g#head #rightAntenna > ellipse {
     transform: rotate(-15deg);
   }
 }
+@media only screen(max-width: 768px)
+{
+  .heading{
+    text-align:center;
+  }
+}
